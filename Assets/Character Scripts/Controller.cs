@@ -19,10 +19,7 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (JumpTimer < 1)
-        {
-            JumpTimer += Time.deltaTime;
-        }
+     
         if (Input.GetKey(KeyCode.A))
         {
             Rb.AddForce(Vector2.left * speed * Time.deltaTime);
@@ -31,17 +28,6 @@ public class Controller : MonoBehaviour
         {
             Rb.AddForce(Vector2.right * speed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            if (JumpTimer >= 1)
-            {
-                Rb.AddForce(Vector2.up * jump);
-                JumpTimer = 0; 
-            }
-            
-
-        }
-
-
+        
     }
 }
