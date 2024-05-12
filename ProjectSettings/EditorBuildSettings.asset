@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The main hall.unity
     guid: 9fe63b51437ff184086cf0d74d9fa641
+  - enabled: 1
+    path: Assets/Scenes/Platformer.unity
+    guid: 20a924f2dffe75647bf3f9aedd8a93e8
   m_configObjects: {}
