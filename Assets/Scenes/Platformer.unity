@@ -182,7 +182,7 @@ Transform:
   m_GameObject: {fileID: 468594551}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.063484, y: 4.1864095, z: -9.176287}
+  m_LocalPosition: {x: 71.9, y: 10.3, z: -9.176287}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -256,16 +256,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1300847453027765869, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15992261
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300847453027765869, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15992261
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300847453027765869, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15992261
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300847453027765869, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.275746
+      value: -11.49
       objectReference: {fileID: 0}
     - target: {fileID: 1300847453027765869, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.356454
+      value: -1.86
       objectReference: {fileID: 0}
     - target: {fileID: 1300847453027765869, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.8336
       objectReference: {fileID: 0}
     - target: {fileID: 1300847453027765869, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
       propertyPath: m_LocalRotation.w
@@ -297,7 +309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8352061172699782269, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
       propertyPath: m_Name
-      value: Capsule (1)
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

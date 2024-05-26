@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1300847453027765869}
   - component: {fileID: 8661072384560991677}
   - component: {fileID: 8721554894396036317}
-  - component: {fileID: 5992062677232788348}
+  - component: {fileID: 4950166082682824827}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 882493c8c1447a5439b640187030f501, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -113,7 +113,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &5992062677232788348
+--- !u!70 &4950166082682824827
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,6 +145,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 4.6, y: 0}
+  m_Size: {x: 7.31, y: 32}
   m_Direction: 0
