@@ -17,6 +17,8 @@ public class PlayerHealthPlatformer : MonoBehaviour
     public GameObject barrier;
     public float damage;
 
+    public AudioSource damageSound;
+
     private void Start()
     {
         _currentValue = MaxValue;
@@ -25,6 +27,7 @@ public class PlayerHealthPlatformer : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         _currentValue -= damage;
+        damageSound.Play();
         if (_currentValue <= 0)
         {
             _currentValue = 0;
