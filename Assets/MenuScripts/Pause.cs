@@ -45,7 +45,7 @@ public class Pause : MonoBehaviour
         _pausePanel.SetActive(true);
         Time.timeScale = 0;
         _isPaused = true;
-        GetComponent<PlayerHealthPlatformer>().enabled  =   false;
+        
     }
 
     public void ResumeGame()

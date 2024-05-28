@@ -12,7 +12,7 @@ public class PlayerHealthPlatformer : MonoBehaviour
     public Slider health;
     public float MaxValue = 100f;
 
-    float _currentValue;
+    public float _currentValue;
 
     public GameObject barrier;
     public float damage;
@@ -36,12 +36,12 @@ public class PlayerHealthPlatformer : MonoBehaviour
         UpdateHealthBar();
     }
 
-    void UpdateHealthBar()
+    public void UpdateHealthBar()
     {
         health.value = _currentValue / MaxValue;
     }
         
-    void GameOver()
+     public void GameOver()
     {
         GameOverUI.SetActive(true);
         PlayerUI.SetActive(false);
