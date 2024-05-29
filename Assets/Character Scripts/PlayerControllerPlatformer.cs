@@ -8,12 +8,15 @@ public class PlayerControllerPlatformer : MonoBehaviour
     public float jumpForce = 5f;
     Rigidbody2D rb;
     SpriteRenderer sr;
+
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-
+        anim = GetComponent<Animator>();
+        anim.SetFloat("moveX", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
     }
 
     // Update is called once per frame

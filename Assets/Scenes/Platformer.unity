@@ -35653,6 +35653,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   jumpForce: 15
+  anim: {fileID: 1648174049}
+--- !u!95 &1648174049 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6676669658860049559, guid: 998bafd472403f443a29311f6c22a613, type: 3}
+  m_PrefabInstance: {fileID: 7394933982724494307}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1651285194
 PrefabInstance:
   m_ObjectHideFlags: 0
