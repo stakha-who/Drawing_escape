@@ -160,7 +160,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8603482068194620344, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1300847453027765869, guid: 71bee1b2e256a9d4784ec226ef57bf65, type: 3}
@@ -217,6 +218,7 @@ MonoBehaviour:
   GameOverUI: {fileID: 0}
   health: {fileID: 0}
   MaxValue: 100
+  _currentValue: 0
   barrier: {fileID: 0}
   damage: 10
   damageSound: {fileID: 0}
