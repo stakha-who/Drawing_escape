@@ -8,6 +8,8 @@ public class PlayerControllerPlatformer : MonoBehaviour
     public float jumpForce = 5f;
     Rigidbody2D rb;
     SpriteRenderer sr;
+    private bool isGround;
+
 
     public Animator anim;
     // Start is called before the first frame update
@@ -27,19 +29,21 @@ public class PlayerControllerPlatformer : MonoBehaviour
 
         anim.SetFloat("moveX", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
 
-        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.velocity.y) < 0.05f)
+        if (Mathf.Abs(rb.velocity.y) < 0.05f)
         {
-            rb.AddForce(new Vector2 (0, jumpForce), ForceMode2D.Impulse);
-            anim.SetBool("Jumping", true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            }
+
+            anim.SetBool("Jumping", false);
         }
         else
         {
-           
-            anim.SetBool("Jumping", false);
+            anim.SetBool("Jumping", true);
         }
 
         sr.flipX = movement < 0 ? true : false;
-
     }
 
 }
