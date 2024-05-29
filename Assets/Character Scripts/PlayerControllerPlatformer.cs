@@ -16,7 +16,7 @@ public class PlayerControllerPlatformer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        anim.SetFloat("moveX", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+
     }
 
     // Update is called once per frame
@@ -25,12 +25,21 @@ public class PlayerControllerPlatformer : MonoBehaviour
         float movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * speed * Time.deltaTime;
 
+        anim.SetFloat("moveX", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+
         if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(rb.velocity.y) < 0.05f)
         {
             rb.AddForce(new Vector2 (0, jumpForce), ForceMode2D.Impulse);
+            anim.SetBool("Jumping", true);
+        }
+        else
+        {
+           
+            anim.SetBool("Jumping", false);
         }
 
         sr.flipX = movement < 0 ? true : false;
+
     }
 
 }
