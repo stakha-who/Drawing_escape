@@ -45,7 +45,7 @@ public class PlayerHealthPlatformer : MonoBehaviour
     {
         GameOverUI.SetActive(true);
         PlayerUI.SetActive(false);
-        GetComponent<ControllerPlatformer>().enabled = false;
+        GetComponent<PlayerControllerPlatformer>().enabled = false;
     }
 
 }

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2 holl.unity
     guid: a64ca517480c38148bdb835b92f2e4b4
+  - enabled: 1
+    path: Assets/Scenes/2 level.unity
+    guid: 1704a53988eb1784b8c7cee4fc2f0a2c
   m_configObjects: {}
