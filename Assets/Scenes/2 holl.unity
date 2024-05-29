@@ -626,6 +626,7 @@ GameObject:
   - component: {fileID: 1176481407}
   - component: {fileID: 1176481406}
   - component: {fileID: 1176481408}
+  - component: {fileID: 1176481409}
   m_Layer: 0
   m_Name: Picture3
   m_TagString: Untagged
@@ -743,8 +744,20 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16, y: 10.08}
+  m_Size: {x: 16.01, y: 10.08}
   m_EdgeRadius: 0
+--- !u!114 &1176481409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176481405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45832fcf6a2e0d94596f55d1ccba694b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1204111051 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9106570468057084673, guid: a8d2c3ace1b6a974abba0da40bb1a7a7, type: 3}
